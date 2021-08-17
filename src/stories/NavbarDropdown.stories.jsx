@@ -112,8 +112,8 @@ export default {
 
 const Template = (args) => <NavbarDropdown {...args} />;
 
-export const SmallContents = Template.bind({});
-SmallContents.args = {
+export const Primary = Template.bind({});
+Primary.args = {
   columns,
   footerItems,
   label: 'Games'

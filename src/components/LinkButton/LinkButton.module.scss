@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.linkButton {
+  background-color: #006fb2;
+  border: solid 1px #00aeff;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  padding: 10px 50px;
+  transition: background-color 200ms, border 200ms;
+
+  &:hover {
+    background-color: #007bc6;
+    border: solid 1px #79d4ff;
+  }
+}
