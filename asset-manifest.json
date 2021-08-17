@@ -1,0 +1,43 @@
+{
+  "files": {
+    "0.d8a2d933.iframe.bundle.js": "./0.d8a2d933.iframe.bundle.js",
+    "main.css": "./static/css/main.2ca70e3a.chunk.css",
+    "main.js": "./main.95c14891.iframe.bundle.js",
+    "main.css.map": "./static/css/main.2ca70e3a.chunk.css.map",
+    "runtime~main.js": "./runtime~main.92a80f38.iframe.bundle.js",
+    "vendors~main.js": "./vendors~main.967c2aa7.iframe.bundle.js",
+    "vendors~main.js.map": "./vendors~main.967c2aa7.iframe.bundle.js.map",
+    "4.a55bdb56.iframe.bundle.js": "./4.a55bdb56.iframe.bundle.js",
+    "4.a55bdb56.iframe.bundle.js.map": "./4.a55bdb56.iframe.bundle.js.map",
+    "5.405d6c0b.iframe.bundle.js": "./5.405d6c0b.iframe.bundle.js",
+    "6.223a5a5c.iframe.bundle.js": "./6.223a5a5c.iframe.bundle.js",
+    "6.223a5a5c.iframe.bundle.js.map": "./6.223a5a5c.iframe.bundle.js.map",
+    "7.a73a59ca.iframe.bundle.js": "./7.a73a59ca.iframe.bundle.js",
+    "4.a55bdb56.iframe.bundle.js.LICENSE.txt": "./4.a55bdb56.iframe.bundle.js.LICENSE.txt",
+    "6.223a5a5c.iframe.bundle.js.LICENSE.txt": "./6.223a5a5c.iframe.bundle.js.LICENSE.txt",
+    "iframe.html": "./iframe.html",
+    "static/media/apps_24dp.2859a5c9.svg": "./static/media/apps_24dp.2859a5c9.svg",
+    "static/media/battle_net_24dp.38b9bc2c.svg": "./static/media/battle_net_24dp.38b9bc2c.svg",
+    "static/media/expand_less_24dp.f0cc1e85.svg": "./static/media/expand_less_24dp.f0cc1e85.svg",
+    "static/media/expand_more_24dp.c20ca823.svg": "./static/media/expand_more_24dp.c20ca823.svg",
+    "static/media/file_download_24dp.fffc0768.svg": "./static/media/file_download_24dp.fffc0768.svg",
+    "static/media/forum_24dp.9c447892.svg": "./static/media/forum_24dp.9c447892.svg",
+    "static/media/game_logo-diablo_2_resurrected.073683e8.png": "./static/media/game_logo-diablo_2_resurrected.073683e8.png",
+    "static/media/game_logo-diablo_3.c682b65a.png": "./static/media/game_logo-diablo_3.c682b65a.png",
+    "static/media/game_logo-diablo_4.89f3e95a.png": "./static/media/game_logo-diablo_4.89f3e95a.png",
+    "static/media/game_logo-diablo_immortal.31a9b761.png": "./static/media/game_logo-diablo_immortal.31a9b761.png",
+    "static/media/game_logo-hearthstone.90299b13.png": "./static/media/game_logo-hearthstone.90299b13.png",
+    "static/media/game_logo-heroes_of_the_storm.970ebc27.png": "./static/media/game_logo-heroes_of_the_storm.970ebc27.png",
+    "static/media/game_logo-starcraft_2.c34aab01.png": "./static/media/game_logo-starcraft_2.c34aab01.png",
+    "static/media/game_logo-starcraft_remastered.3e1f4ecf.png": "./static/media/game_logo-starcraft_remastered.3e1f4ecf.png",
+    "static/media/game_logo-warcraft_3_reforged.11db065a.png": "./static/media/game_logo-warcraft_3_reforged.11db065a.png",
+    "static/media/game_logo-world_of_warcraft.86b165a9.png": "./static/media/game_logo-world_of_warcraft.86b165a9.png",
+    "vendors~main.967c2aa7.iframe.bundle.js.LICENSE.txt": "./vendors~main.967c2aa7.iframe.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.92a80f38.iframe.bundle.js",
+    "vendors~main.967c2aa7.iframe.bundle.js",
+    "static/css/main.2ca70e3a.chunk.css",
+    "main.95c14891.iframe.bundle.js"
+  ]
+}
