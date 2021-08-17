@@ -14,7 +14,7 @@ export const NavbarDropdown = ({ columns, footerItems, label }) => {
 
   useEffect(() => {
     const handleClick = e => {
-      if (expanded && !(contentsRef ?? {}).current.contains(e.target) && e.target !== labelRef.current) {
+      if (expanded && !(contentsRef ?? {}).current.contains(e.target) && !(labelRef ?? {}).current.contains(e.target)) {
         setExpanded(false);
       }
     }
@@ -86,7 +86,7 @@ export const NavbarDropdown = ({ columns, footerItems, label }) => {
     <React.Fragment>
       <div className={`${styles.label} ${expanded ? styles.expanded : ''}`} onClick={toggleContents} ref={labelRef}>
         {label}
-        <img src={expanded ? contractArrow : expandArrow} alt="" />
+        <img src={expanded ? contractArrow : expandArrow} alt="" data-testid="toggle" />
       </div>
       {contents}
     </React.Fragment>

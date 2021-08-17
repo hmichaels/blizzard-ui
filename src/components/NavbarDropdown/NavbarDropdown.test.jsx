@@ -12,12 +12,12 @@ const footerItems = [
 ];
 
 // helper to check contents aren't visible
-const expectContentsToNotBeVisible = selector => {
+const checkAllContents = (selector, matcher) => {
   columns.forEach(column => {
-    expect(selector(column.name)).toBeNull();
+    expect(selector(column.name))[matcher]();
   });
   footerItems.forEach(footerItem => {
-    expect(selector(footerItem.name)).toBeNull();
+    expect(selector(footerItem.name))[matcher]();
   });
 }
 
@@ -32,7 +32,7 @@ describe('NavbarDropdown', () => {
     );
     expect(getByText('Games')).toBeDefined();
 
-    expectContentsToNotBeVisible(queryByText);
+    checkAllContents(queryByText, 'toBeNull');
   });
 
   it('should display the columns and footer items when clicking the label', () => {
@@ -43,15 +43,7 @@ describe('NavbarDropdown', () => {
 
     fireEvent.click(label);
 
-    // columns should be visible
-    columns.forEach(column => {
-      expect(getByText(column.name)).toBeDefined();
-    });
-
-    // footer items should be visible
-    footerItems.forEach(footerItem => {
-      expect(getByText(footerItem.name)).toBeDefined();
-    });
+    checkAllContents(getByText, 'toBeDefined');
   });
 
   it('should hide the contents if clicking away from the component', () => {
@@ -70,22 +62,27 @@ describe('NavbarDropdown', () => {
     const externalElement = getByText('Click Me!');
     fireEvent.mouseDown(externalElement);
 
-    expectContentsToNotBeVisible(queryByText);
+    checkAllContents(queryByText, 'toBeNull');
   });
 
-  it('should hide the contents when clicking the label if the contents are visible', () => {
+  it('should hide the contents when clicking the label/label contents if the contents are visible', () => {
     // i.e. testing that the mousedown listener doesn't interfere with hiding the contents
-    const { getByText, queryByText } = render(
+    const { getByTestId, getByText, queryByText } = render(
       <NavbarDropdown columns={columns} footerItems={footerItems} label="Games" />
     );
     const label = getByText('Games');
+    const toggleIcon = getByTestId('toggle');
 
-    fireEvent.click(label); // contents visible
-
+    fireEvent.click(label);
     // (mousedown listener ignored)
-
+    checkAllContents(getByText, 'toBeDefined');
     fireEvent.click(label); // contents hidden again
+    checkAllContents(queryByText, 'toBeNull');
 
-    expectContentsToNotBeVisible(queryByText);
+    // toggle arrow
+    fireEvent.click(label);
+    checkAllContents(getByText, 'toBeDefined');
+    fireEvent.click(toggleIcon);
+    checkAllContents(queryByText, 'toBeNull');
   });
 });
